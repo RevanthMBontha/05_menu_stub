@@ -71,5 +71,13 @@ const menu = [
     img: './images/item-9.jpeg',
     desc: `skateboard fam synth authentic semiotics. Live-edge lyft af, edison bulb yuccie crucifix microdosing.`,
   },
+  {
+    id: 10,
+    title: 'choco lava cake',
+    category: 'desserts',
+    price: 8.99,
+    img: './images/item-10.jpeg',
+    desc: `pork belly cloud bread semiotics. bicycle rights kickstarter pinterest bulb snackwave pork microdosing mug whatever raw slow-carb.`,
+  },
 ];
 export default menu;

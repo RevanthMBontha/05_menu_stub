@@ -174,9 +174,23 @@ Menu
   transition: var(--transition);
   border-radius: var(--radius);
 }
-.filter-btn:hover {
+.filter-btn:hover,
+.filter-btn-selected {
   background: var(--clr-gold);
   color: var(--clr-white);
+}
+@media screen and (max-width: 600px) {
+  .btn-container {
+    display: block;
+  }
+  .filter-btn {
+    width: 100%;
+  }
+}
+.is-loading-center {
+  display: flex;
+  text-align: center;
+  justify-content: center;
 }
 .section-center {
   width: 90vw;
@@ -190,6 +204,7 @@ Menu
   display: grid;
   gap: 1rem 2rem;
   max-width: 25rem;
+  text-align: center;
 }
 .photo {
   object-fit: cover;
@@ -219,6 +234,7 @@ Menu
   .menu-item {
     grid-template-columns: 225px 1fr;
     gap: 0 1.25rem;
+    text-align: left;
     max-width: 40rem;
   }
   .photo {
